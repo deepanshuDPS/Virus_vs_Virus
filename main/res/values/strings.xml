@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Virus Vs Virus</string>
+    <string name="instruction">"ABOUT THE GAME\nIt's a multiplayer(2-4) game like\ntic-tac-toe in which we make chains\nof 'X' and 'O' to win the game.\nRULES\n1. We have to increase our virus to\nwin the game.\n2. Our virus will expand when we \nmake the chain of viruses \nhorizontally or vertically.\n3. If there is any opponent virus \nadjacent to our virus horizontally\nor vertically at the time of chain\nmaking then our virus occupy that \nspace to increase in our virus.\n4. Player having large number of virus,\nwill be declared winner\n5. Need to make chain of:-\n4 virus :- In 2 Players\n3 virus :- In 3 Players\n2 virus :- In 4 Players"</string>
+</resources>

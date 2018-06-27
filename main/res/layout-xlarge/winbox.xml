@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bbackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pwon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="PLAYER NAME"
+        android:textAlignment="center"
+        android:textColor="#1dceed"
+        android:textSize="70dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <ImageView
+        android:id="@+id/pwoni"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/all" />
+
+    <TextView
+        android:id="@+id/draw"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="YOU WON"
+        android:textAlignment="center"
+        android:textColor="#1dceed"
+        android:textSize="70dp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="230dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:background="@drawable/buttonshapew"
+        android:text="EXIT"
+        android:textColor="@android:color/background_light"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="230dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttonshapew"
+        android:text="RESTART"
+        android:textColor="@android:color/background_light"
+        android:layout_marginBottom="40dp"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

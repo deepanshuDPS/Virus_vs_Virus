@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.Game.Rowdy.virusvsvirus.SelPlayer">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:src="@drawable/top"
+        android:layout_marginRight="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/gifImageView3" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="50dp"
+        android:layout_height="150dp"
+        android:background="#00000000"
+        android:src="@drawable/right"
+        android:layout_column="2"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/gifImageView"
+        android:layout_alignTop="@+id/gifImageView3"
+        android:layout_alignParentEnd="true" />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selplayer"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TableRow>
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="126dp"
+                android:layout_height="108dp"
+                android:layout_above="@+id/play2"
+                android:layout_marginBottom="5dp"
+                android:background="#00000000"
+                android:src="@drawable/vvv"
+                android:layout_gravity="center"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/play2"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="play_2"
+                android:text="2 PLAYERS"
+                android:textColor="#808080"
+                android:textSize="24dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/play3"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="play_3"
+                android:text="3 PLAYERS"
+                android:textColor="#808080"
+                android:textSize="24dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/play4"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="play_4"
+                android:text="4 PLAYERS"
+                android:textColor="#808080"
+                android:textSize="24dp" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:id="@+id/gplayed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="GAMES PLAYED : 0"
+                android:textAlignment="center"
+                android:textColor="#808080"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow>
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tableLayout2"
+                android:layout_gravity="center">
+                <TableRow
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+                    <Button
+                        android:id="@+id/info"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/info"
+                        android:onClick="info" />
+
+                    <Button
+                        android:id="@+id/sound"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/unmute"
+                        android:onClick="sound" />
+                    <Button
+                        android:id="@+id/share"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="3dp"
+                        android:visibility="gone"
+                        android:background="@drawable/sharelogo"
+                        android:onClick="shareit" />
+                </TableRow>
+
+            </TableLayout>
+
+        </TableRow>
+    </TableLayout>
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:src="@drawable/down"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="7dp"
+        android:id="@+id/gifImageView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="50dp"
+        android:layout_height="150dp"
+        android:background="#00000000"
+        android:src="@drawable/left"
+        android:layout_column="2"
+        android:layout_marginLeft="3dp"
+        android:layout_alignBottom="@+id/gifImageView2"
+        android:layout_alignStart="@+id/gifImageView3" />
+</RelativeLayout>

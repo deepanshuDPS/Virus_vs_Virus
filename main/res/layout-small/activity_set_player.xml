@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.Game.Rowdy.virusvsvirus.SetPlayer"
+    android:id="@+id/namesback">
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/setplayer">
+        <TableRow>
+
+            <TextView
+                android:layout_span="2"
+                android:text="SET PLAYER NAMES"
+                android:textAlignment="center"
+                android:textColor="#500178"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+            </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:layout_marginTop="3dp"
+                android:text="Maximum 10 characters"
+                android:textAlignment="viewEnd"
+                android:textColor="#000000"
+                android:textSize="13dp" />
+        </TableRow>
+        <TableRow>
+            <ImageView android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="0"
+                android:background="@drawable/bturn"
+                android:layout_marginRight="3dp"/>
+
+            <EditText
+                android:id="@+id/p1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:hint="Blue-V"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+        <TableRow>
+            <ImageView android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="0"
+                android:background="@drawable/rturn"
+                android:layout_marginRight="3dp"/>
+
+            <EditText
+                android:id="@+id/p2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Red-V"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+        <TableRow>
+            <ImageView android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="0"
+                android:background="@drawable/gturn"
+                android:layout_marginRight="3dp"
+                android:id="@+id/i3"/>
+
+            <EditText
+                android:id="@+id/p3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Green-V"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+        <TableRow>
+            <ImageView android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="0"
+                android:background="@drawable/yturn"
+                android:layout_marginRight="3dp"
+                android:id="@+id/i4"/>
+
+            <EditText
+                android:id="@+id/p4"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Yellow-V"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </TableRow>
+        <TableRow>
+            <TableLayout
+                android:layout_span="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:layout_gravity="center">
+            <TableRow>
+
+                <Button
+                    android:id="@+id/play"
+                    android:layout_width="200dp"
+                    android:background="@drawable/buttonshapeb"
+                    android:onClick="play"
+                    android:text="SET AND PLAY"
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </TableRow>
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/splay"
+                        android:layout_width="125dp"
+                        android:background="@drawable/buttonshapeb"
+                        android:onClick="splay"
+                        android:text="SKIP AND PLAY"
+                        android:textColor="#000000"
+                        android:layout_marginTop="10dp"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+                </TableRow>
+        </TableLayout></TableRow>
+    </TableLayout>
+
+</RelativeLayout>
